@@ -37,19 +37,34 @@ getProduct = async (req, res) => {
             });
         });
 };
-// get All products
-products = async (req, res) => {
-    Product.find().select('-__v').then(productInfos => {
-        res.status(200).json(productInfos);
-    }).catch(error => {
-        console.log(error);
 
+// get All products
+// products = async (req, res) => {
+//     Product.find().select('-__v').then(productInfos => {
+//         res.status(200).json(productInfos);
+//     }).catch(error => {
+//         console.log(error);
+
+//         res.status(500).json({
+//             "message": "Error!",
+//             "error": error
+//         });
+//     });
+// };
+
+products = async (req, res) => {
+    try {
+        const products = await Product.find().select('-__v');
+        res.status(200).json(products);
+    } catch (error) {
+        console.error(error);
         res.status(500).json({
-            "message": "Error!",
+            "message": "Error retrieving products",
             "error": error
         });
-    });
+    }
 };
+
 // delete product by id
 deleteProduct = async (req, res) => {
     let productId = req.params.id;
