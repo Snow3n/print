@@ -13,13 +13,13 @@ export const Footer = () => {
             <NavLink to="/t-shirts">Футболки</NavLink>
           </li>
           <li>
-            <NavLink to="/about">О нас</NavLink>
+            <NavLink to="/about">Про нас</NavLink>
           </li>
           <li>
-            <NavLink to="/ship&pay">Доставка и оплата</NavLink>
+            <NavLink to="/ship&pay">Доставка та оплата</NavLink>
           </li>
-        </ul>
-        <ul id="socials">
+        {/* </ul> */}
+        {/* <ul id="socials"> */}
           <li>
             <a href="https://instagram.com">Instagram</a>
           </li>

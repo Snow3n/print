@@ -93,7 +93,7 @@ export function Shirts() {
                   handleBuy(product);
                 }}
               >
-                Купить
+                Купити
               </Button>
             </li>
           </Paper>

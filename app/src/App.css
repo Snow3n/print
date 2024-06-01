@@ -98,7 +98,16 @@ a:hover {
   /* width: 100%; */
   background: linear-gradient(rgb(40, 44, 52), black);
   display: flex;
-  padding-left: 40%;
+  justify-content: center;
+  align-content: center;
+  /* padding-left: 40%; */
+}
+
+
+#footer > #menu {
+  display: flex;
+  list-style-type: none;
+  margin: auto;
 }
 
 #footer>ul {
@@ -172,10 +181,6 @@ body {
   flex-flow: row-reverse;
 }
 
-#top-nav ul li {
-  margin: 25px;
-}
-
 #index {
   /* background-image: url("imgs/index-bg.jpg"); */
   min-height: 240px;
@@ -214,12 +219,16 @@ body {
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-column-gap: 32px;
 }
 
 #content {
-  max-width: 200px;
+  /* max-width: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 #portfolio>h1 {

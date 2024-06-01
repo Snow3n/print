@@ -67,7 +67,7 @@ export const Navbar = () => {
           </Typography>
           <Typography
             variant="h6"
-            style={{ float: "right", margin: "0 10% 0 65%" }}
+            style={{ float: "right", position: "absolute", right: "24px"}}
           >
             <Badge
               badgeContent={count}

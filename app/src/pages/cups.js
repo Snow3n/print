@@ -86,7 +86,7 @@ export function Cups() {
                     handleBuy(product);
                   }}
                 >
-                  Купить
+                  Купити
                 </Button>
               </li>
             </Paper>
